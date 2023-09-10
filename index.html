@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple currency converter</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section class="container">
+        <form id="currency-converter">
+            <p>Currency Converter</p>
+            <section id="from-section">
+                <label for="from" id="from">From</label>
+                <input type="text" name="from" id="from" list="from-list" autocomplete="off" autofocus/>
+                <datalist id="from-list"></datalist>
+            </section>
+            <section id="to-section">
+                <label for="to" id="to">To</label>
+                <input type="text" name="to" id="to" list="to-list" autocomplete="off" autofocus/>
+                <datalist id="to-list"></datalist>
+            </section>
+            <section id="amount-section">
+                <label for="amount">Amount</label>
+                <input type="number" name="amount" id="amount" />
+            </section>
+            <button type="submit">Convert</button>
+        </form>
+        <p class="result"></p>
+        <script src="main.js"></script>
+    </section>
+</body>
+</html>
